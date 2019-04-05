@@ -3,7 +3,7 @@
 
 * [CellEnabledConverter.cs](./CS/WpfApplication241/CellEnabledConverter.cs) (VB: [CellEnabledConverter.vb](./VB/WpfApplication241/CellEnabledConverter.vb))
 * [DateEditCalendarEx.cs](./CS/WpfApplication241/DateEditCalendarEx.cs) (VB: [DateEditCalendarEx.vb](./VB/WpfApplication241/DateEditCalendarEx.vb))
-* **[MainWindow.xaml](./CS/WpfApplication241/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/WpfApplication241/MainWindow.xaml.vb))**
+* **[MainWindow.xaml](./CS/WpfApplication241/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication241/MainWindow.xaml))**
 * [MainWindow.xaml.cs](./CS/WpfApplication241/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication241/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to disable some dates in DateEdit
