@@ -9,7 +9,7 @@
 * [MainViewModel.cs](./CS/WpfApplication241/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/WpfApplication241/MainViewModel.vb))
 * [MainWindow.xaml](./CS/WpfApplication241/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication241/MainWindow.xaml))
 <!-- default file list end -->
-# How to disable some dates in DateEdit
+# How to: Disable Certain Dates in DateEdit
 
 This example shows how to disable certain dates in the DateEdit. Declare a custom **DateEdit.PopupContentTemplate** and specify the [DateNavigator.DisabledDates](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateNavigator.DateNavigator.DisabledDates) property.
 
