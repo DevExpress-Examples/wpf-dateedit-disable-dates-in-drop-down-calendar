@@ -1,44 +1,46 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
+﻿Imports DevExpress.Mvvm
+Imports System.Collections.ObjectModel
 Imports System.Windows
-Imports System.Windows.Documents
 
 Namespace WpfApplication241
-	''' <summary>
-	''' Interaction logic for MainWindow.xaml
-	''' </summary>
-	Partial Public Class MainWindow
-		Inherits Window
 
-		Public Sub New()
-			InitializeComponent()
-			'DateTime maxDate = DateTime.Today;
-			'DateTime minDate = maxDate - new TimeSpan(90, 0, 0, 0);
-			'List<DateTime> allDates = Enumerable.Range(0, 1 + 90).Select(offset => minDate.AddDays(offset)).ToList();
-			'List<DateTime> weekendDates = allDates.Where(x => x.DayOfWeek == DayOfWeek.Saturday || x.DayOfWeek == DayOfWeek.Sunday).ToList();
-			'dateEdit1.MinValue = minDate;
-			'dateEdit1.MaxValue = maxDate;
-			'dateEdit1.SetValue(DateEdit.TagProperty, weekendDates);
-			Dim vm As New MyViewModel()
-			DataContext = vm
-		End Sub
-	End Class
+    Partial Public Class MainWindow
+        Inherits Window
 
-	Public Class MyViewModel
-		Public Property DisabledDates() As List(Of DateTime)
-		Public Property MaxDate() As DateTime
-		Public Property MinDate() As DateTime
-		Public Sub New()
-			DisabledDates = New List(Of DateTime)()
-			MaxDate = DateTime.Today
-			MinDate = MaxDate.Subtract(New TimeSpan(90, 0, 0, 0))
-			Dim allDates As List(Of DateTime) = Enumerable.Range(0, 1 + 90).Select(Function(offset) MinDate.AddDays(offset)).ToList()
-			DisabledDates = allDates.Where(Function(x) x.DayOfWeek = DayOfWeek.Saturday OrElse x.DayOfWeek = DayOfWeek.Sunday).ToList()
+        Public Sub New()
+            Me.InitializeComponent()
+        End Sub
+    End Class
 
+    Public Class MainViewModel
+        Inherits ViewModelBase
 
-		End Sub
-	End Class
+        Public ReadOnly Property DisabledDates As ObservableCollection(Of Date)
+
+        Public Property MaxDate As Date
+            Get
+                Return GetValue(Of Date)()
+            End Get
+
+            Set(ByVal value As Date)
+                SetValue(value)
+            End Set
+        End Property
+
+        Public Property MinDate As Date
+            Get
+                Return GetValue(Of Date)()
+            End Get
+
+            Set(ByVal value As Date)
+                SetValue(value)
+            End Set
+        End Property
+
+        Public Sub New()
+            MinDate = Date.Today
+            MaxDate = Date.Today.AddDays(14)
+            DisabledDates = New ObservableCollection(Of Date) From {Date.Today.AddDays(3), Date.Today.AddDays(5), Date.Today.AddDays(7)}
+        End Sub
+    End Class
 End Namespace
-
-
