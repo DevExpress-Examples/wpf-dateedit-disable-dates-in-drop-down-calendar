@@ -1,10 +1,10 @@
-﻿Imports DevExpress.Mvvm
+Imports DevExpress.Mvvm
 Imports System.Collections.ObjectModel
 Imports System.Windows
 
 Namespace WpfApplication241
 
-    Partial Public Class MainWindow
+    Public Partial Class MainWindow
         Inherits Window
 
         Public Sub New()
