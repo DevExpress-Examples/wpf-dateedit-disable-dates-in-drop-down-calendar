@@ -4,9 +4,11 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WPF DateEdit - Disable Dates in the Drop-Down Calendar
+# WPF DateEdit - Disable Dates in the Drop-down Calendar
 
 This example forbids users to select specified days in the [DateEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit)'s drop-down calendar. The [DateEdit.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MinValue) and [DateEdit.MaxValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MaxValue) properties allow you to specify the available date range.
+
+![image](https://user-images.githubusercontent.com/65009440/210504092-67f8906c-3fe6-4b06-82a9-e8040d87c3c4.png)
 
 Follow the steps below to disable specific days in the popup:
 
@@ -21,8 +23,6 @@ Follow the steps below to disable specific days in the popup:
    The `dxe:PopupBaseEdit.PopupOwnerEdit` attached property returns the `DateEdit`. The editor's `DataContext` is the **MainViewModel** class that contains the **DisabledDates** collection.
 
 3. Assign this template to the `DateEdit`'s [PopupContentTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.PopupBaseEdit.PopupContentTemplate) property.
-
-![image](https://user-images.githubusercontent.com/65009440/210504092-67f8906c-3fe6-4b06-82a9-e8040d87c3c4.png)
 
 ## Files to Review
 
