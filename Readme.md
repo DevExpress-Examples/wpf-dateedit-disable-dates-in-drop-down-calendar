@@ -20,7 +20,7 @@ Follow the steps below to disable specific days in the popup:
                                               Path=(dxe:PopupBaseEdit.PopupOwnerEdit).DataContext.DisabledDates}" ... />
    ```
    
-   The `dxe:PopupBaseEdit.PopupOwnerEdit` attached property returns the `DateEdit`. The editor's `DataContext` is the **MainViewModel** class that contains the **DisabledDates** collection.
+   The `dxe:PopupBaseEdit.PopupOwnerEdit` attached property returns the `DateEdit`. The editor's `DataContext` is the **MainViewModel** class that contains the **DisabledDates** collection. Modify this binding if your **DisabledDates** collection is not located in the `DateEdit`'s `DataContext`.
 
 3. Assign this template to the `DateEdit`'s [PopupContentTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.PopupBaseEdit.PopupContentTemplate) property.
 
