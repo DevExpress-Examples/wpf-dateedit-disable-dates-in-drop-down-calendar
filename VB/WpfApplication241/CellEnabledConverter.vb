@@ -1,4 +1,3 @@
-﻿Imports DevExpress.Xpf.Editors.Popups.Calendar
 Imports System
 Imports System.Collections.Generic
 Imports System.Windows.Controls
@@ -6,14 +5,15 @@ Imports System.Windows.Data
 Imports System.Windows.Markup
 
 Namespace WpfApplication241
+
     Public Class CellEnabledConverter
         Inherits MarkupExtension
         Implements IMultiValueConverter
 
-        Public Function Convert(ByVal values() As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object Implements IMultiValueConverter.Convert
+        Public Function Convert(ByVal values As Object(), ByVal targetType As Type, ByVal parameter As Object, ByVal culture As Globalization.CultureInfo) As Object Implements IMultiValueConverter.Convert
             Dim disabledDates As List(Of Date) = TryCast(values(0), List(Of Date))
-            Dim cellButton As Button = DirectCast(values(1), Button)
-            Dim dt As Date = CDate(DateEditCalendar.GetDateTime(cellButton))
+            Dim cellButton As Button = CType(values(1), Button)
+            Dim dt As Date = CDate(DevExpress.Xpf.Editors.DateEditCalendarBase.GetDateTime(cellButton))
             If disabledDates IsNot Nothing Then
                 Return disabledDates.Contains(dt)
             Else
@@ -21,7 +21,7 @@ Namespace WpfApplication241
             End If
         End Function
 
-        Public Function ConvertBack(ByVal value As Object, ByVal targetTypes() As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object() Implements IMultiValueConverter.ConvertBack
+        Public Function ConvertBack(ByVal value As Object, ByVal targetTypes As Type(), ByVal parameter As Object, ByVal culture As Globalization.CultureInfo) As Object() Implements IMultiValueConverter.ConvertBack
             Throw New NotImplementedException()
         End Function
 
