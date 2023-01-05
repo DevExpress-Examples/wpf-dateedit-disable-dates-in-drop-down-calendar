@@ -1,12 +1,9 @@
-﻿Imports DevExpress.Xpf.Editors.Popups.Calendar
-Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
+Imports DevExpress.Xpf.Editors.Popups.Calendar
 Imports System.Windows
 Imports System.Windows.Controls
 
 Namespace WpfApplication241
+
     Public Class DateEditCalendarEx
         Inherits DateEditCalendar
 
@@ -15,7 +12,6 @@ Namespace WpfApplication241
             If button.IsEnabled Then
                 MyBase.OnCellButtonClick(sender, e)
             End If
-
         End Sub
     End Class
 End Namespace
