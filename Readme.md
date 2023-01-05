@@ -6,7 +6,7 @@
 
 # WPF DateEdit - Disable Dates in the Drop-down Calendar
 
-This example forbids users to select specified days in the [DateEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit)'s drop-down calendar. The [DateEdit.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MinValue) and [DateEdit.MaxValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MaxValue) properties allow you to specify the available date range.
+This example prevents users from selecting specific days in the [DateEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit)'s drop-down calendar. The [DateEdit.MinValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MinValue) and [DateEdit.MaxValue](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.DateEdit.MaxValue) properties allow you to specify the available date range.
 
 ![image](https://user-images.githubusercontent.com/65009440/210504092-67f8906c-3fe6-4b06-82a9-e8040d87c3c4.png)
 
