@@ -24,7 +24,7 @@ If you need to allow selecting dates from a specific range, it's sufficient to s
 
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-dateedit-disable-dates-in-drop-down-calendar&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-dateedit-disable-dates-in-drop-down-calendar&~~~was_helpful=no)
 
