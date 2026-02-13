@@ -43,7 +43,7 @@ Follow the steps below to disable specific dates in the popup:
 * [How to highlight certain dates in DateEdit](https://github.com/DevExpress-Examples/how-to-make-dateedit-highlight-certain-dates-like-in-datenavigator-e4231)
 * [WPF LookUpEdit - Customize the Embedded Data Grid](https://github.com/DevExpress-Examples/wpf-lookupedit-customize-the-embedded-data-grid)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-dateedit-disable-dates-in-drop-down-calendar&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-dateedit-disable-dates-in-drop-down-calendar&~~~was_helpful=no)
 
